@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "Início",
+    "collections": "Coleções",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "hero": {
+    "tagline": "Desde 1991",
+    "title": "Joias que marcam os momentos mais importantes da sua vida",
+    "subtitle": "Alianças e joias em ouro 18k, feitas com tradição e excelência na Sé, São Paulo.",
+    "cta": "Falar com Especialista no WhatsApp"
+  },
+  "authority": {
+    "title": "Por que escolher a Monarca?",
+    "guarantee": "Garantia Eterna",
+    "guarantee_desc": "Nossas peças são garantidas para sempre.",
+    "certificate": "Certificado de Pureza",
+    "certificate_desc": "Ouro 18k certificado em cada peça.",
+    "security": "Segurança na Sé",
+    "security_desc": "Estacionamento parceiro e atendimento exclusivo."
+  },
+  "collections": {
+    "title": "Nossas Coleções",
+    "material": "Ouro 18k"
+  },
+  "footer": {
+    "hours": "Horário de funcionamento",
+    "address": "Rua Quintino Bocaiuva, 84 — 10º andar, Sé, São Paulo",
+    "rights": "Todos os direitos reservados."
+  }
+}

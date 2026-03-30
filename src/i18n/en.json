@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "Home",
+    "collections": "Collections",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Since 1991",
+    "title": "Jewelry that marks the most important moments of your life",
+    "subtitle": "18k gold rings and jewelry, made with tradition and excellence in Sé, São Paulo.",
+    "cta": "Talk to a Specialist on WhatsApp"
+  },
+  "authority": {
+    "title": "Why choose Monarca?",
+    "guarantee": "Lifetime Guarantee",
+    "guarantee_desc": "Our pieces are guaranteed forever.",
+    "certificate": "Purity Certificate",
+    "certificate_desc": "Certified 18k gold in every piece.",
+    "security": "Safe Shopping",
+    "security_desc": "Partner parking and exclusive service."
+  },
+  "collections": {
+    "title": "Our Collections",
+    "material": "18k Gold"
+  },
+  "footer": {
+    "hours": "Opening hours",
+    "address": "Rua Quintino Bocaiuva, 84 — 10th floor, Sé, São Paulo",
+    "rights": "All rights reserved."
+  }
+}
