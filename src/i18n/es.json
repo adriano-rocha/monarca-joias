@@ -8,8 +8,14 @@
   "hero": {
     "tagline": "Desde 1991",
     "title": "SERVIR • ATENDER • SORPRENDER",
-    "subtitle": "Alianzas y joyas en oro 18k, hechas con tradición y excelencia en Sé, São Paulo.",
+    "subtitle": "Alianzas y joyas en oro 18k, hechas con tradición y excelencia en Sé.",
     "cta": "Hablar con un Especialista en WhatsApp"
+  },
+  "about": {
+    "tagline": "Sobre nosotros",
+    "text1": "Monarca Jóias va mucho más allá de la fabricación de alianzas.",
+    "text2": "Es una experiencia para eternizar emociones con plenitud y brillo.",
+    "text3": "Nuestra misión es proporcionar joyas de alta calidad y belleza, que encanten e inspiren a nuestros clientes a través de piezas únicas y exclusivas."
   },
   "authority": {
     "title": "¿Por qué elegir Monarca?",
@@ -23,6 +29,10 @@
   "collections": {
     "title": "Nuestras Colecciones",
     "material": "Oro 18k"
+  },
+  "testimonials": {
+    "tagline": "Reseñas",
+    "title": "Lo que dicen nuestros clientes"
   },
   "footer": {
     "hours": "Horario de atención",

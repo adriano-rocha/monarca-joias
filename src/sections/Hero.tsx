@@ -1,39 +1,57 @@
-import { motion } from 'framer-motion'
-import { useTranslation } from 'react-i18next'
-import { MessageCircle } from 'lucide-react'
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
-const WHATSAPP_NUMBER = '5511983554617'
-const WHATSAPP_MESSAGE = encodeURIComponent('Olá! Vim pelo site e gostaria de falar com um especialista.')
+const WHATSAPP_NUMBER = "5511983554617";
+const WHATSAPP_MESSAGE = encodeURIComponent(
+  "Olá! Vim pelo site e gostaria de falar com um especialista.",
+);
 
 export function Hero() {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden"
+      className="relative h-screen w-full flex flex-col items-center justify-between overflow-hidden bg-black"
     >
-      {/* Imagem de fundo */}
-      <div
-        className="absolute inset-0 opacity-40 bg-cover bg-position-[center_70%]"
-        style={{ backgroundImage: "url('/images/gold_alliance.jpg')" }}
-      />
+      {/* Container do vídeo com overflow hidden */}
+      <div className="absolute inset-0 overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute top-1/2 left-1/2 opacity-60"
+          style={{
+            transform: "translate(-50%, -50%)",
+            minWidth: "100%",
+            minHeight: "100%",
+            width: "auto",
+            height: "auto",
+          }}
+          poster="/images/hero-desktop-bg.jpg"
+        >
+          <source src="/videos/video_hero.mp4" type="video/mp4" />
+        </video>
+      </div>
 
-      {/* Gradiente sobre a imagem */}
-      <div className="absolute inset-0 bg-linear-to-b from-black/60 via-transparent to-black" />
+      {/* Gradiente sobre o vídeo */}
+      <div className="absolute inset-0 bg-linear-to-b from-black/50 via-transparent to-black/80" />
 
-      {/* Conteúdo */}
-      <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
-
+      {/* Conteúdo superior — Tagline + Título + Subtítulo */}
+      <div className="relative z-10 text-center px-6 max-w-3xl mx-auto mt-40 md:mt-48">
         {/* Tagline */}
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-yellow-600 tracking-[0.4em] uppercase text-xs md:text-sm"
-          style={{ fontFamily: "'Inter', sans-serif" }}
+          className="text-xs md:text-sm tracking-[0.4em] uppercase"
+          style={{
+            fontFamily: "'Inter', sans-serif",
+            color: "#BFA26A",
+          }}
         >
-          {t('hero.tagline')}
+          {t("hero.tagline")}
         </motion.span>
 
         {/* Título */}
@@ -41,10 +59,13 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl sm:text-2xl md:text-4xl text-black font-semibold mt-4 mb-6 leading-tight"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          className="text-xl sm:text-2xl md:text-4xl font-semibold mt-4 mb-6 leading-tight"
+          style={{
+            fontFamily: "'Cormorant Garamond', serif",
+            color: "#F5F0E8",
+          }}
         >
-          {t('hero.title')}
+          {t("hero.title")}
         </motion.h1>
 
         {/* Subtítulo */}
@@ -52,27 +73,44 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-black text-sm md:text-lg mb-10 leading-relaxed"
+          className="text-sm md:text-lg leading-relaxed"
+          style={{
+            fontFamily: "'Albert Sans', sans-serif",
+            color: "#BFA26A",
+          }}
         >
-          {t('hero.subtitle')}
+          {t("hero.subtitle")}
         </motion.p>
+      </div>
 
-        {/* CTA WhatsApp */}
+      {/* CTA — fixado na parte inferior */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.6 }}
+        className="relative z-10 mb-16 md:mb-20"
+      >
         <motion.a
           href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
           target="_blank"
           rel="noopener noreferrer"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.97 }}
-          className="inline-flex items-center gap-3 bg-yellow-600 hover:bg-yellow-500 text-black font-semibold px-6 md:px-8 py-3 md:py-4 rounded-full transition-colors text-xs md:text-sm tracking-wider uppercase cursor-pointer"
+          className="inline-flex items-center gap-3 font-semibold px-6 md:px-8 py-3 md:py-4 rounded-full transition-colors text-xs md:text-sm tracking-wider uppercase cursor-pointer"
+          style={{
+            backgroundColor: "#F5B800",
+            color: "#000000",
+            fontFamily: "'Albert Sans', sans-serif",
+          }}
         >
-          <MessageCircle size={20} />
-          {t('hero.cta')}
+          <img
+            src="/images/whats.png"
+            alt="WhatsApp"
+            className="w-5 h-5 object-contain"
+          />
+          {t("hero.cta")}
         </motion.a>
-      </div>
+      </motion.div>
     </section>
-  )
+  );
 }

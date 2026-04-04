@@ -8,8 +8,14 @@
   "hero": {
     "tagline": "Desde 1991",
     "title": "SERVIR • ATENDER • SURPREENDER",
-    "subtitle": "Alianças e joias em ouro 18k, feitas com tradição e excelência na Sé, São Paulo.",
+    "subtitle": "Alianças e joias em ouro 18k, feitas com tradição e excelência na Sé.",
     "cta": "Falar com Especialista no WhatsApp"
+  },
+  "about": {
+    "tagline": "Sobre nós",
+    "text1": "A Monarca Jóias vai muito além da fabricação de alianças.",
+    "text2": "É uma experiência para eternizar emoções com plenitude e brilho.",
+    "text3": "Nossa missão é fornecer joias de alta qualidade e beleza, que encantem e inspirem nossos clientes através de peças únicas e exclusivas."
   },
   "authority": {
     "title": "Por que escolher a Monarca?",
@@ -23,6 +29,10 @@
   "collections": {
     "title": "Nossas Coleções",
     "material": "Ouro 18k"
+  },
+  "testimonials": {
+    "tagline": "Avaliações",
+    "title": "O que nossos clientes dizem"
   },
   "footer": {
     "hours": "Horário de funcionamento",

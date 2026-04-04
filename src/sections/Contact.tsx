@@ -52,7 +52,7 @@ export function Contact() {
                 >
                   Endereço
                 </h3>
-                <p className="text-stone-400 text-sm leading-relaxed">
+                <p className="text-stone-400 text-sm leading-relaxed font-['Inter',sans-serif]">
                   Rua Quintino Bocaiuva, 84 — 10º andar
                   <br />
                   Sé, São Paulo — SP
@@ -74,8 +74,10 @@ export function Contact() {
                 >
                   Contato
                 </h3>
-                <p className="text-stone-400 text-sm">(11) 3242-0141</p>
-                <p className="text-stone-400 text-sm">
+                <p className="text-stone-400 text-sm font-['Inter',sans-serif]">
+                  (11) 3242-0141
+                </p>
+                <p className="text-stone-400 text-sm font-['Inter',sans-serif]">
                   WhatsApp: (11) 98355-4617
                 </p>
               </div>
@@ -92,10 +94,12 @@ export function Contact() {
                 >
                   {t("footer.hours")}
                 </h3>
-                <p className="text-stone-400 text-sm">
+                <p className="text-stone-400 text-sm font-['Inter',sans-serif]">
                   Segunda a Sexta: 9h às 18h
                 </p>
-                <p className="text-stone-400 text-sm">Sábado: 9h às 14h</p>
+                <p className="text-stone-400 text-sm font-['Inter',sans-serif]">
+                  Sábado: 9h às 14h
+                </p>
               </div>
             </div>
           </motion.div>

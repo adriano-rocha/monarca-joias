@@ -8,8 +8,14 @@
   "hero": {
     "tagline": "Since 1991",
     "title": "SERVE • ATTEND • SURPRISE",
-    "subtitle": "18k gold rings and jewelry, made with tradition and excellence in Sé, São Paulo.",
+    "subtitle": "18k gold rings and jewelry, made with tradition and excellence in Sé.",
     "cta": "Talk to a Specialist on WhatsApp"
+  },
+  "about": {
+    "tagline": "About us",
+    "text1": "Monarca Jóias goes far beyond the making of wedding rings.",
+    "text2": "It is an experience to eternalize emotions with fullness and brilliance.",
+    "text3": "Our mission is to provide high quality and beautiful jewelry, that enchants and inspires our customers through unique and exclusive pieces."
   },
   "authority": {
     "title": "Why choose Monarca?",
@@ -23,6 +29,10 @@
   "collections": {
     "title": "Our Collections",
     "material": "18k Gold"
+  },
+  "testimonials": {
+    "tagline": "Reviews",
+    "title": "What our customers say"
   },
   "footer": {
     "hours": "Opening hours",
