@@ -21,7 +21,7 @@ export function Header() {
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-3 md:py-4 flex items-center">
 
         {/* Coluna Esquerda — Logo + Início */}
-        <div className="flex items-center gap-4 w-1/3">
+        <div className="flex items-center gap-4 md:w-1/3">
           <img
             src="/images/logo.png"
             alt="Monarca Jóias"
@@ -84,7 +84,7 @@ export function Header() {
         </div>
 
         {/* Mobile Direita — Bandeiras + Hamburguer */}
-        <div className="flex md:hidden items-center gap-1">
+        <div className="flex md:hidden items-center gap-1 ml-auto">
           <div className="flex gap-1">
             {languages.map((lang) => (
               <button

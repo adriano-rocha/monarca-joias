@@ -21,14 +21,8 @@ export function Hero() {
           muted
           loop
           playsInline
-          className="absolute top-1/2 left-1/2 opacity-60"
-          style={{
-            transform: "translate(-50%, -50%)",
-            minWidth: "100%",
-            minHeight: "100%",
-            width: "auto",
-            height: "auto",
-          }}
+          className="w-full h-full object-cover object-center opacity-60"
+          style={{}}
           poster="/images/hero-desktop-bg.jpg"
         >
           <source src="/videos/video_hero.mp4" type="video/mp4" />
@@ -100,7 +94,7 @@ export function Hero() {
           style={{
             backgroundColor: "#F5B800",
             color: "#000000",
-            fontFamily: "'Albert Sans', sans-serif",
+            fontFamily: "'Cormorant Garamond', serif",
           }}
         >
           <img

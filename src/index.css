@@ -18,5 +18,11 @@
   * {
     scrollbar-width: none;
     -ms-overflow-style: none;
+    font-variant-numeric: normal;
+    font-feature-settings: "lnum" 1;
   }
+
+  svg path {
+  fill: inherit;
+}
 }

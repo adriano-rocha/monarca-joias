@@ -20,13 +20,13 @@ export function Contact() {
             className="text-yellow-600 tracking-[0.4em] uppercase text-sm"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            {t("nav.contact")}
+            {t("contact.tagline")}
           </span>
           <h2
             className="text-4xl text-white mt-3"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            {t("footer.address")}
+            {t("contact.address")}
           </h2>
           <div className="w-16 h-px bg-yellow-600 mx-auto mt-4" />
         </motion.div>
@@ -41,6 +41,7 @@ export function Contact() {
             viewport={{ once: true }}
             className="flex flex-col gap-8"
           >
+            {/* Endereço */}
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-full border border-yellow-600 flex items-center justify-center shrink-0">
                 <MapPin size={20} className="text-yellow-500" />
@@ -50,19 +51,20 @@ export function Contact() {
                   className="text-white text-lg mb-1"
                   style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
-                  Endereço
+                  {t("contact.address_title")}
                 </h3>
-                <p className="text-stone-400 text-sm leading-relaxed font-['Inter',sans-serif]">
-                  Rua Quintino Bocaiuva, 84 — 10º andar
+                <p className="text-stone-400 text-sm leading-relaxed">
+                  {t("contact.address")}
                   <br />
-                  Sé, São Paulo — SP
+                  {t("contact.address_city")}
                 </p>
                 <p className="text-yellow-600 text-xs mt-1">
-                  🚉 A 5 minutos do Metrô Sé
+                  {t("contact.address_metro")}
                 </p>
               </div>
             </div>
 
+            {/* Contato */}
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-full border border-yellow-600 flex items-center justify-center shrink-0">
                 <Phone size={20} className="text-yellow-500" />
@@ -72,17 +74,18 @@ export function Contact() {
                   className="text-white text-lg mb-1"
                   style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
-                  Contato
+                  {t("contact.contact_title")}
                 </h3>
-                <p className="text-stone-400 text-sm font-['Inter',sans-serif]">
-                  (11) 3242-0141
+                <p className="text-stone-400 text-sm">
+                  {t("contact.phone")}
                 </p>
-                <p className="text-stone-400 text-sm font-['Inter',sans-serif]">
-                  WhatsApp: (11) 98355-4617
+                <p className="text-stone-400 text-sm">
+                  {t("contact.whatsapp")}
                 </p>
               </div>
             </div>
 
+            {/* Horários */}
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-full border border-yellow-600 flex items-center justify-center shrink-0">
                 <Clock size={20} className="text-yellow-500" />
@@ -92,13 +95,13 @@ export function Contact() {
                   className="text-white text-lg mb-1"
                   style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
-                  {t("footer.hours")}
+                  {t("contact.hours_title")}
                 </h3>
-                <p className="text-stone-400 text-sm font-['Inter',sans-serif]">
-                  Segunda a Sexta: 9h às 18h
+                <p className="text-stone-400 text-sm">
+                  {t("contact.hours_weekdays")}
                 </p>
-                <p className="text-stone-400 text-sm font-['Inter',sans-serif]">
-                  Sábado: 9h às 14h
+                <p className="text-stone-400 text-sm">
+                  {t("contact.hours_saturday")}
                 </p>
               </div>
             </div>

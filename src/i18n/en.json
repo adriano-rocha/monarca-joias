@@ -27,16 +27,30 @@
     "security_desc": "Partner parking and exclusive service."
   },
   "collections": {
-    "title": "Our Collections",
+    "title": "Eternalize this Moment",
     "material": "18k Gold"
   },
   "testimonials": {
     "tagline": "Reviews",
     "title": "What our customers say"
   },
+  "contact": {
+    "tagline": "Contact",
+    "address_title": "Address",
+    "address": "Rua Quintino Bocaiuva, 84 — 10th floor",
+    "address_city": "Sé, São Paulo — SP",
+    "address_metro": "🚉 5 minutes from Sé Metro Station",
+    "contact_title": "Contact",
+    "phone": "(11) 3242-0141",
+    "whatsapp": "WhatsApp: (11) 98355-4617",
+    "hours_title": "Opening hours",
+    "hours_weekdays": "Monday to Friday: 9am to 6pm",
+    "hours_saturday": "Saturday: 9am to 2pm"
+  },
   "footer": {
+    "rights": "All rights reserved.",
     "hours": "Opening hours",
     "address": "Rua Quintino Bocaiuva, 84 — 10th floor, Sé, São Paulo",
-    "rights": "All rights reserved."
+    "slogan": "Serve • Assist • Surprise"
   }
 }

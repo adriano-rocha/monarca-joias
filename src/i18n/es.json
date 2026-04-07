@@ -27,16 +27,30 @@
     "security_desc": "Estacionamiento asociado y atención exclusiva."
   },
   "collections": {
-    "title": "Nuestras Colecciones",
+    "title": "Eterniza este Momento",
     "material": "Oro 18k"
   },
   "testimonials": {
     "tagline": "Reseñas",
     "title": "Lo que dicen nuestros clientes"
   },
+  "contact": {
+    "tagline": "Contacto",
+    "address_title": "Dirección",
+    "address": "Rua Quintino Bocaiuva, 84 — piso 10",
+    "address_city": "Sé, São Paulo — SP",
+    "address_metro": "🚉 A 5 minutos del Metro Sé",
+    "contact_title": "Contacto",
+    "phone": "(11) 3242-0141",
+    "whatsapp": "WhatsApp: (11) 98355-4617",
+    "hours_title": "Horario de atención",
+    "hours_weekdays": "Lunes a Viernes: 9h a 18h",
+    "hours_saturday": "Sábado: 9h a 14h"
+  },
   "footer": {
+    "rights": "Todos los derechos reservados.",
     "hours": "Horario de atención",
     "address": "Rua Quintino Bocaiuva, 84 — piso 10, Sé, São Paulo",
-    "rights": "Todos los derechos reservados."
+    "slogan": "Servir • Atender • Sorprender"
   }
 }
