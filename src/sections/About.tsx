@@ -27,7 +27,7 @@ export function About() {
         <div className="flex items-center justify-center gap-4 mb-8">
           <div className="w-16 h-px" style={{ backgroundColor: '#BFA26A' }} />
           <span
-            className="tracking-[0.4em] uppercase text-xs"
+            className="tracking-[0.4em] uppercase text-base md:text-lg"
             style={{ color: '#BFA26A', fontFamily: "'Cormorant Garamond', serif" }}
           >
             {t('about.tagline')}
