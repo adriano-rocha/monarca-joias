@@ -23,7 +23,7 @@ export function Footer() {
           <img
             src="/images/logo.png"
             alt="Monarca Jóias"
-            className="h-14 w-auto"
+            className="h-14 w-auto brightness-150"
           />
           <p
             className="tracking-[0.3em] uppercase text-xs text-center"

@@ -73,18 +73,12 @@ export function Collections() {
           <div
             className={`grid gap-6 ${isMobile ? "grid-cols-1" : "grid-cols-3"}`}
           >
-            {visibleProducts.map((product, index) => {
+            {visibleProducts.map((product) => {
               const translation =
                 product.translations[lang] || product.translations["pt"];
               return (
-                <motion.div
+                <div
                   key={`${product.id}-${current}`}
-                  initial={{ opacity: 0, y: isMobile ? 0 : 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{
-                    duration: isMobile ? 0.3 : 0.5,
-                    delay: isMobile ? 0 : index * 0.1,
-                  }}
                   className="group relative overflow-hidden rounded-xl cursor-pointer border border-stone-800 hover:shadow-2xl hover:shadow-yellow-500/20 transition-all duration-500"
                   style={{ height: "320px" }}
                 >
@@ -123,7 +117,7 @@ export function Collections() {
                       {translation.description}
                     </p>
                   </div>
-                </motion.div>
+                </div>
               );
             })}
           </div>
