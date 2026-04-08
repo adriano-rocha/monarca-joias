@@ -7,7 +7,9 @@ import { Authority } from './sections/Authority'
 import { Contact } from './sections/Contact'
 import { Testimonials } from './sections/Testimonials'
 import { Footer } from './sections/Footer'
-import { WhatsAppButtonFloat } from './components/WhatsAppButtonFloat'
+import WhatsAppButton from './components/WhatsAppButton'
+import CookieBanner from './components/CookieBanner'
+
 
 function App() {
   return (
@@ -21,7 +23,9 @@ function App() {
       <Testimonials />
       <Contact />
       < Footer />
-      <WhatsAppButtonFloat/>
+      < WhatsAppButton />
+      <CookieBanner />
+      
     </>
   )
 }

@@ -45,7 +45,7 @@ export function Hero() {
             color: "#BFA26A",
           }}
         >
-          {t("hero.tagline")}
+          
         </motion.span>
 
         {/* Título */}

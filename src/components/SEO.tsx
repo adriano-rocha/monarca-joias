@@ -2,6 +2,43 @@ import { useEffect } from 'react'
 
 export function SEO() {
   useEffect(() => {
+    // ── Meta tags básicas ──────────────────────────────────
+    const metas: Record<string, string> = {
+      description: 'Fábrica de alianças e joias em ouro 18k localizada na Sé, São Paulo. Desde 1991.',
+
+      // Open Graph (WhatsApp, Facebook, Instagram)
+      'og:type': 'website',
+      'og:url': 'https://monarcajoias.com.br',
+      'og:title': 'Monarca Jóias — Alianças e Joias em Ouro 18k',
+      'og:description': 'Fábrica de alianças e joias em ouro 18k na Sé, São Paulo. Atendimento exclusivo desde 1991.',
+      'og:image': 'https://monarcajoias.com.br/images/og-image.jpg',
+      'og:image:width': '1200',
+      'og:image:height': '630',
+      'og:locale': 'pt_BR',
+      'og:site_name': 'Monarca Jóias',
+
+      // Twitter Card (também usado pelo WhatsApp como fallback)
+      'twitter:card': 'summary_large_image',
+      'twitter:title': 'Monarca Jóias — Alianças e Joias em Ouro 18k',
+      'twitter:description': 'Fábrica de alianças e joias em ouro 18k na Sé, São Paulo. Atendimento exclusivo desde 1991.',
+      'twitter:image': 'https://monarcajoias.com.br/images/og-image.jpg',
+    }
+
+    const injected: HTMLMetaElement[] = []
+
+    Object.entries(metas).forEach(([key, content]) => {
+      const attr = key.startsWith('og:') ? 'property' : 'name'
+      const existing = document.head.querySelector(`meta[${attr}="${key}"]`)
+      if (existing) return
+
+      const meta = document.createElement('meta')
+      meta.setAttribute(attr, key)
+      meta.setAttribute('content', content)
+      document.head.appendChild(meta)
+      injected.push(meta)
+    })
+
+    // ── JSON-LD ────────────────────────────────────────────
     const script = document.createElement('script')
     script.type = 'application/ld+json'
     script.text = JSON.stringify({
@@ -10,7 +47,7 @@ export function SEO() {
       name: 'Monarca Jóias',
       url: 'https://monarcajoias.com.br',
       logo: 'https://monarcajoias.com.br/images/logo.png',
-      image: 'https://monarcajoias.com.br/images/logo.png',
+      image: 'https://monarcajoias.com.br/images/og-image.jpg',
       description: 'Fábrica de alianças e joias em ouro 18k localizada na Sé, São Paulo. Desde 1991.',
       priceRange: '$$$',
       telephone: '+55-11-3242-0141',
@@ -50,6 +87,7 @@ export function SEO() {
     document.head.appendChild(script)
 
     return () => {
+      injected.forEach((meta) => document.head.removeChild(meta))
       document.head.removeChild(script)
     }
   }, [])

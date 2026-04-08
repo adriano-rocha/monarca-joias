@@ -28,7 +28,8 @@
   },
   "collections": {
     "title": "Eternize esse Momento",
-    "material": "Ouro 18k"
+    "material": "Ouro 18k",
+    "cta": "VER COLEÇÃO COMPLETA"
   },
   "testimonials": {
     "tagline": "Avaliações",
@@ -52,5 +53,9 @@
     "hours": "Horário de funcionamento",
     "address": "Rua Quintino Bocaiuva, 84 — 10º andar, Sé, São Paulo",
     "slogan": "Servir • Atender • Surpreender"
+  },
+  "whatsapp": {
+    "message": "Olá! Vim pelo site e gostaria de falar com um especialista.",
+    "tooltip": "Fale conosco"
   }
 }

@@ -10,6 +10,7 @@ export function Collections() {
   const [current, setCurrent] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const itemsPerPage = isMobile ? 1 : 3;
+  const WHATSAPP_NUMBER = "5511983554617";
 
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth < 768);
@@ -78,9 +79,12 @@ export function Collections() {
               return (
                 <motion.div
                   key={`${product.id}-${current}`}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={{ opacity: 0, y: isMobile ? 0 : 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  transition={{
+                    duration: isMobile ? 0.3 : 0.5,
+                    delay: isMobile ? 0 : index * 0.1,
+                  }}
                   className="group relative overflow-hidden rounded-xl cursor-pointer border border-stone-800 hover:shadow-2xl hover:shadow-yellow-500/20 transition-all duration-500"
                   style={{ height: "320px" }}
                 >
@@ -90,7 +94,9 @@ export function Collections() {
                     loading="lazy"
                     className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:blur-[1px]"
                   />
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center justify-end pb-8 px-4 text-center bg-linear-to-t from-black/90 via-black/50 to-transparent">
+                  <div
+                    className={`absolute inset-0 transition-all duration-500 flex flex-col items-center justify-end pb-8 px-4 text-center bg-linear-to-t from-black/90 via-black/50 to-transparent ${isMobile ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`}
+                  >
                     <span
                       className="text-xl font-semibold mb-1"
                       style={{
@@ -196,6 +202,34 @@ export function Collections() {
               />
             ))}
           </div>
+
+          {/* CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="flex justify-center mt-12"
+          >
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t("whatsapp.message"))}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 px-8 py-3 rounded-full border transition-all duration-300 hover:bg-[#BFA26A]/10"
+              style={{ borderColor: "#BFA26A" }}
+            >
+              <span
+                style={{
+                  fontFamily: "'Cormorant Garamond', serif",
+                  color: "#BFA26A",
+                  fontSize: "1rem",
+                  letterSpacing: "0.15em",
+                }}
+              >
+                {t("collections.cta")}
+              </span>
+            </a>
+          </motion.div>
         </div>
       </div>
     </section>
