@@ -13,7 +13,7 @@ export function About() {
         <img
           src="/images/logo_about.png"
           alt=""
-          className="w-150 md:w-200 opacity-5 select-none"
+          className="w-150 md:w-200 opacity-12 select-none"
         />
       </div>
 
