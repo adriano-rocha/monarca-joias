@@ -91,7 +91,7 @@ export function Collections() {
                   <img
                     src={product.image}
                     alt={translation.name}
-                    loading="lazy"
+                    loading="eager"
                     className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:blur-[1px]"
                   />
                   <div

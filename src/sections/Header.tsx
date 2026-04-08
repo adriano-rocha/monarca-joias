@@ -25,7 +25,7 @@ export function Header() {
           <img
             src="/images/logo.png"
             alt="Monarca Jóias"
-            className="h-10 md:h-12 w-auto"
+            className="h-13 md:h-12 w-auto"
           />
           <a
             href="#hero"
@@ -46,7 +46,7 @@ export function Header() {
         </div>
 
         {/* Mobile — Nome centralizado */}
-        <span className="md:hidden flex-1 text-center tracking-widest uppercase text-xs"
+        <span className="md:hidden flex-1 text-center tracking-widest uppercase text-base"
           style={{ fontFamily: "'Cormorant Garamond', serif", color: "#BFA26A" }}>
           Monarca Jóias
         </span>
@@ -91,7 +91,7 @@ export function Header() {
                 key={lang.code}
                 onClick={() => changeLanguage(lang.code)}
                 aria-label={`Mudar idioma para ${lang.label}`}
-                className={`w-6 h-6 rounded-full overflow-hidden border-2 transition-all cursor-pointer ${
+                className={`w-5 h-5 rounded-full overflow-hidden border-2 transition-all cursor-pointer ${
                   i18n.language === lang.code
                     ? "border-yellow-500 scale-110"
                     : "border-transparent opacity-60 hover:opacity-100"
