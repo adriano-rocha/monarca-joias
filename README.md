@@ -45,6 +45,7 @@ npm run dev
 - SEO otimizado com JSON-LD (Schema.org)
 - Animações suaves com Framer Motion
 - CTA direto para WhatsApp
+- Banner de cookies com conformidade LGPD
 
 ## 📍 Sobre a Monarca Jóias
 
